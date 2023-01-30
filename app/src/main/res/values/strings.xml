@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Backuper</string>
+    <string name="backup">Backup</string>
+    <string name="connecting">Connecting</string>
+    <string name="load_robot_name_from_controller">Load robot name from controller</string>
+    <string name="robot">Robot</string>
+    <string name="nulls">null</string>
+</resources>

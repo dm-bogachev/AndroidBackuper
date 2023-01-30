@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="356dp"
+            android:layout_height="68dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/connecting"
+            android:textSize="42sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <Switch
+            android:id="@+id/loadRobotNameSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="end"
+            android:text="@string/load_robot_name_from_controller"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/robotNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/nulls"
+            android:inputType="textPersonName"
+            android:text="@string/robot"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/backupButton"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:onClick="backupButtonClicked"
+            android:text="@string/backup"
+            android:textSize="36sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="62dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/consoleWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom"
+        android:maxLines="32768"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
